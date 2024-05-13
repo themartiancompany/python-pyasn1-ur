@@ -1,3 +1,7 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
+# Maintainer: Pellegrino Prevete <pellegrinoprevete@gmail.com>
+# Maintainer: Truocolo <truocolo@aol.com>
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=python-pyasn1
@@ -29,3 +33,4 @@ package() {
   python -m installer -d "$pkgdir" dist/*.whl
   install -Dm644 LICENSE.rst -t "$pkgdir"/usr/share/licenses/$pkgname/
 }
+
